@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const Timer = ({setStop, questionNbr}) => {
     const [timer, setTimer] = useState(30)
-    const [seconds, setSeconds] = useState(30)
+    
 
     useEffect(() => {
         if(timer === 0) return setStop(true)
