@@ -1,0 +1,59 @@
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: url('./images/fond.jpg');
+    width: 100vh;
+    font-family: 'Fredoka One', cursive;
+    color: rgba(53, 99, 160, 1);
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    display: flex;
+    padding: 15px;
+    
+    
+    
+}
+
+@keyframes correct {
+    0%, 22%, 42%{
+        background-color: rgba(255,255,255, 0.3)
+        
+    }
+    20%, 40%{
+        background-color: rgba(255,255,255, 0.6)
+    }
+    60%,100%{
+        background-color: rgba(69, 255, 27, 0.6)
+    }
+}
+
+@keyframes wrong {
+    0%, 22%, 42%{
+        background-color: rgba(255,255,255, 0.3)
+        
+    }
+    20%, 40%{
+        background-color: rgba(255,255,255, 0.6)
+    }
+    60%,100%{
+        background-color: rgba(255, 27, 27, 0.6)
+    }
+}
+
+@import './components/pyramid/pyramid.scss';
+@import './components/Question/question.scss';
+@import './components/Timer/timer.scss';
+@import './components/User/user.scss';
+@import './components/Header/header.scss';

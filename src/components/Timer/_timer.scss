@@ -1,0 +1,24 @@
+.containerTimer{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    border-radius: 20px;
+    background-color: rgba(255,255,255, 0.2);
+    height: 70%;
+    align-self: flex-end;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    .timer{
+        width: 68%;
+        height: 30%;
+        border-radius: 100%;
+        border: 10px solid rgba(53, 99, 160, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        font-weight: 700;
+    }
+}
